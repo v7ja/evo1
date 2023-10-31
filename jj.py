@@ -10,15 +10,15 @@ import asyncio
 
 app=Client(
     "King",
-    api_id = 15145595,
-    api_hash = "c3f60ecf742e136436acc9082ac8d9a4",
+    api_id = 26138525,
+    api_hash = "55a6871eb56955846686203e5bef3ee3",
     bot_token = '2123918620:AAE75pWJEQ-ifZwWtIckpy9HLoLg3Sefh4M')
 
 redis_url = "redis://default:a2jZotelmeOefoNWvtuaLeq0tLTdMrHf@redis-15873.c250.eu-central-1-1.ec2.cloud.redislabs.com:15873"
 r = redis.from_url(redis_url, encoding="utf-8",decode_responses=True)
 
-id = 15145595
-hash = "c3f60ecf742e136436acc9082ac8d9a4"
+id = 26138525
+hash = "55a6871eb56955846686203e5bef3ee3"
 click = 0
 
 @app.on_message(filters.command("start"))
@@ -118,8 +118,8 @@ async def main(app, msg):
         		await msg.reply_text("sᴛᴀʀᴛᴇᴅ")
         		wyo = r.smembers("sessions")
         		clicks = 0
-        		id = 15145595
-        		hash = "c3f60ecf742e136436acc9082ac8d9a4"
+        		id = 26138525
+        		hash = "55a6871eb56955846686203e5bef3ee3"
         		for ses in wyo:
         			clicks +=1
         			try:
